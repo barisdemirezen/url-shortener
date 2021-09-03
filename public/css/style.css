@@ -1,20 +1,30 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-textarea:focus, input:focus{
-    outline: none;
-    border-color: orange;
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: orange;
 }
 
 .main {
-    background: #24C6DC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+  background: #24c6dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #514a9d,
+    #24c6dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #514a9d,
+    #24c6dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -22,72 +32,92 @@ textarea:focus, input:focus{
 }
 
 .area {
-    text-align: center;
-    color: darkblue;
-    padding: 5vw;
-    min-width: 60vw;
-    min-height: 50vh;
-    background-color: #0a1b47;
-    border-radius: 1vw;
-    display: grid;
-    place-items: center;
+  text-align: center;
+  color: darkblue;
+  padding: 5vw;
+  min-width: 60vw;
+  min-height: 50vh;
+  background-color: #0a1b47;
+  border-radius: 1vw;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
+.shape {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  background: orange;
+  opacity: 0.6;
+  border-radius: 25vw;
+}
+
+#shape-1 {
+  top: -8vw;
+  left: -8vw;
+}
+
+#shape-2 {
+  bottom: -5vw;
+  right: -15vw;
+}
 .area h1 {
-    font-size: 4em;
-    margin: 0;
-    color: white;
+  font-size: 4em;
+  margin: 0;
+  color: white;
 }
 
-.area h1 span{
-    color: orange;
+.area h1 span {
+  color: orange;
 }
 .area p {
-    color: #cacaca;
-    font-size: 1.5em;
-    margin: 0;
-    margin-top: 1vh;
+  color: #cacaca;
+  font-size: 1.5em;
+  margin: 0;
+  margin-top: 1vh;
 }
 
 .input-area {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  margin-top: 5vh;
 }
 
 #input-box {
-    min-width: 30vw;
-    font-size: 1.2em;
-    color: #aaaaaa;
-    padding: 1vw;
-    background-color: white;
-    border-radius: 1vw;
+  min-width: 30vw;
+  font-size: 1.2em;
+  color: #aaaaaa;
+  padding: 1vw;
+  background-color: white;
+  border-radius: 1vw;
 }
 
 #input-button {
-    background-color: orange;
-    border: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.3em;
-    padding: 1vw;
-    border-radius: 1vw; 
-    transition: .1s ease;
+  background-color: orange;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1vw;
+  border-radius: 1vw;
+  transition: 0.1s ease;
 }
 #input-button:hover {
-    background-color: #ffba3d;
-    cursor: pointer;
+  background-color: #ffba3d;
+  cursor: pointer;
 }
 
 #result-link {
-    margin-top: 3vh;
-    font-size: 2.3em;
-    font-weight: bold;
-    color: white;
+  margin-top: 3vh;
+  font-size: 2.3em;
+  font-weight: bold;
+  color: white;
 }
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
