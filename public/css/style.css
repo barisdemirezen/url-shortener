@@ -25,8 +25,8 @@ textarea:focus, input:focus{
     text-align: center;
     color: darkblue;
     padding: 5vw;
-    min-width: 60vw;
-    min-height: 50vh;
+    width: 60vw;
+    height: 50vh;
     background-color: #0a1b47;
     border-radius: 1vw;
     display: grid;
@@ -81,13 +81,37 @@ textarea:focus, input:focus{
     cursor: pointer;
 }
 
-#result-link {
+.result-link {
     margin-top: 3vh;
     font-size: 2.3em;
     font-weight: bold;
-    color: white;
+    color: #6bfc6a;
+    min-height: 6vh;
+}
+
+.result-link:hover {
+    cursor: pointer;
 }
 
 .invisible {
     visibility: hidden;
+}
+
+#copy {
+    color: #7dffff;
+    font-size: 1em;
+    margin: 0;
+}
+
+.error {
+    color: #fc6a6a;
+    font-size: 1.5em;
+}
+
+@media (max-width: 830px) {
+    .area {
+        width: 90vw;
+        height: 80vh;
+        padding: 0;
+    }
 }

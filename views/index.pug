@@ -1,6 +1,7 @@
 html
   head
     link(rel='stylesheet', href='./css/style.css') 
+    meta(content="width=device-width, initial-scale=1", name="viewport")
   body
     .main 
         .area 
@@ -10,5 +11,6 @@ html
                 .input-area
                     input#input-box(type='text', placeholder='Type a boring url to shorten')
                     button#input-button DO IT
-                #result-link.invisible Link burada 
+                #result-link.result-link.invisible
+                p#copy.invisible Click link copy
     script(src='./js/script.js')
