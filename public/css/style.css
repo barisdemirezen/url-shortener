@@ -111,11 +111,35 @@ input:focus {
   cursor: pointer;
 }
 
-#result-link {
-  margin-top: 3vh;
-  font-size: 2.3em;
-  font-weight: bold;
-  color: white;
+.result-link {
+    margin-top: 3vh;
+    font-size: 2.3em;
+    font-weight: bold;
+    color: #6bfc6a;
+    min-height: 6vh;
+}
+
+.result-link:hover {
+    cursor: pointer;
+}
+
+#copy {
+    color: #7dffff;
+    font-size: 1em;
+    margin: 0;
+}
+
+.error {
+    color: #fc6a6a;
+    font-size: 1.5em;
+}
+
+@media (max-width: 830px) {
+    .area {
+        width: 90vw;
+        height: 80vh;
+        padding: 0;
+    }
 }
 
 .invisible {
