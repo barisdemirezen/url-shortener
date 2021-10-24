@@ -145,3 +145,18 @@ input:focus {
 .invisible {
   visibility: hidden;
 }
+
+@media only screen and (max-width: 510px) {
+  .input-area {
+    display: grid;
+    gap: 2vh;
+  }
+  #input-box {
+    width: 70vw;
+    text-align: center;
+    height: 5vh;
+  }
+  #input-button {
+    height: 5vh;
+  }
+}
